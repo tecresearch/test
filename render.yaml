@@ -1,0 +1,61 @@
+# Exported from Render on 2025-01-05T11:40:47Z
+services:
+- type: web
+  name: TCA Voice Assistance
+  runtime: static
+  repo: https://github.com/tecresearch/webd
+  staticPublishPath: ./
+  rootDir: TCA Voice Assistence
+- type: web
+  name: Javascript Project-website
+  runtime: static
+  repo: https://github.com/tecresearch/webd
+  staticPublishPath: ./
+  rootDir: Javascript Project-website
+- type: web
+  name: webd
+  runtime: static
+  repo: https://github.com/tecresearch/webd
+  staticPublishPath: ./
+  rootDir: Dom-manupulation-project
+- type: web
+  name: TodoApp
+  runtime: static
+  repo: https://github.com/tecresearch/webd
+  staticPublishPath: ./
+  rootDir: TodoApp
+- type: web
+  name: Nagar Nigam-prototype
+  runtime: static
+  repo: https://github.com/tecresearch/webd
+  staticPublishPath: ./
+  rootDir: Nagar Nigam-prototype
+- type: web
+  name: tca
+  runtime: static
+  repo: https://github.com/tecresearch/javascript
+  staticPublishPath: ./
+  rootDir: tca_service_portal-dom-concepts
+- type: web
+  name: news-web
+  runtime: static
+  repo: https://github.com/tecresearch/javascript
+  staticPublishPath: ./
+  rootDir: news-website-custom-api
+- type: web
+  name: gniot
+  runtime: static
+  repo: https://github.com/tecresearch/gniot
+  staticPublishPath: ./
+- type: web
+  name: e-voting
+  runtime: static
+  repo: https://github.com/tecresearch/e-voting
+  buildCommand: npm install; npm run build
+  staticPublishPath: dist
+  routes:
+  - type: rewrite
+    source: /*
+    destination: /index.html
+  rootDir: evm-web/biometric-voting-web
+version: "1"
